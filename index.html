@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>logic-trainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>logic-trainer</h1>
+
+    <div id="progress-bar"></div>
+
+    <div id="question-box">
+      <div id="question-number"></div>
+      <div id="timer"></div>
+      <div id="question-text"></div>
+      <ul id="choices"></ul>
+      <div id="answer-result"></div>
+
+      <div class="button-area">
+        <div class="left-button">
+          <button id="submit-answer">解答する</button>
+        </div>
+        <div class="right-button">
+          <button id="next-button">次の問題へ</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="final-score" style="display: none;"></div>
+  </div>
+
+  <audio id="se-correct" src="sounds/correct.mp3" preload="auto"></audio>
+  <audio id="se-incorrect" src="sounds/incorrect.mp3" preload="auto"></audio>
+  <script src="quiz.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
