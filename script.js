@@ -12,6 +12,21 @@ const resultEl = document.getElementById("answer-result");
 const nextBtn = document.getElementById("next-button");
 const submitBtn = document.getElementById("submit-answer");
 const finalScoreEl = document.getElementById("final-score");
+const progressBarEl = document.getElementById("progress-bar");
+
+// Create progress bar dots based on the number of questions
+for (let i = 0; i < quiz.length; i++) {
+  const dot = document.createElement("span");
+  dot.className = "step-dot";
+  progressBarEl.appendChild(dot);
+}
+
+function updateProgressBar() {
+  const dots = progressBarEl.querySelectorAll(".step-dot");
+  dots.forEach((dot, idx) => {
+    dot.classList.toggle("active", idx === current);
+  });
+}
 
 const seCorrect = document.getElementById("se-correct");
 const seIncorrect = document.getElementById("se-incorrect");
@@ -35,6 +50,7 @@ function showQuestion() {
     choicesEl.appendChild(li);
   });
 
+  updateProgressBar();
   startTimer();
 }
 
