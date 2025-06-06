@@ -47,6 +47,6 @@ const quiz = [
     {
       question: "1〜100までの整数のうち、3の倍数でも5の倍数でもある数はいくつ？",
       choices: ["6個", "7個", "10個", "13個"],
-      answerIndex: 2
+      answerIndex: 0
     }
   ];
