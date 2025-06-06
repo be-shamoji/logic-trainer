@@ -50,3 +50,5 @@ const quiz = [
       answerIndex: 2
     }
   ];
+module.exports = quiz;
+
