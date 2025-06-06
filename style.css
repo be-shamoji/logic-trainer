@@ -199,13 +199,4 @@ body {
   .step-dot.active {
     background: #007bff;
   }
-  #answer-result.correct {
-    color: green;
-    font-weight: bold;
-  }
-  
-  #answer-result.incorrect {
-    color: red;
-    font-weight: bold;
-  }
   
